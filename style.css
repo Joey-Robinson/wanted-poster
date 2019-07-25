@@ -1,0 +1,198 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-weight: 300;
+  line-height: 1.6;
+  background: #000;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.container {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
+  height: 95vh;
+  width: 40vw;
+  display: grid;
+  background: linear-gradient(#d9cab3, #cfbb9a);
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 10rem 40rem;
+}
+
+.container--heading {
+  color: rgba(0, 0, 0, 0.75);
+  grid-column: 2;
+  grid-row: 1;
+  text-transform: uppercase;
+  justify-self: center;
+  align-self: center;
+}
+
+.container--heading h1 {
+  margin: 3rem 0 0 0;
+  font-size: 12rem;
+}
+
+.container--image {
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: center;
+  align-self: start;
+  margin: 1.5rem 0;
+}
+
+.container--image img {
+  border: 1px solid black;
+  margin: 0 auto;
+  display: block;
+  width: 85%;
+  justify-self: center;
+}
+
+.container--doa {
+  color: rgba(0, 0, 0, 0.75);
+  grid-column: 2;
+  grid-row: 3;
+  text-transform: uppercase;
+  justify-self: center;
+  align-self: start;
+}
+
+.container--doa h2 {
+  transform: scale(1.55, 1.5);
+  font-size: 4rem;
+}
+
+.container--name {
+  color: rgba(0, 0, 0, 0.75);
+  grid-column: 2;
+  grid-row: 4;
+  text-transform: uppercase;
+  justify-self: center;
+  align-self: center;
+  padding: 1.5rem 0 0 0;
+}
+
+.container--name h1 {
+  transform: scale(1.3, 2);
+  font-size: 4rem;
+}
+
+.container--price {
+  color: rgba(0, 0, 0, 0.75);
+  grid-column: 2;
+  grid-row: 5;
+  text-transform: uppercase;
+  justify-self: center;
+  align-self: start;
+  padding: 0;
+}
+
+.container--price h2 {
+  transform: scaleX(1.15);
+  font-size: 6rem;
+}
+
+.container--price img {
+  height: 3rem;
+  width: 1.5rem;
+}
+
+.container__small__left {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.container__small__left img {
+  display: block;
+  float: left;
+  position: absolute;
+  left: 28.5%;
+  top: 59%;
+}
+
+.container__large__left {
+  grid-column: 1;
+}
+
+.container__large__left img {
+  display: block;
+  float: left;
+  position: absolute;
+  left: 25.5%;
+  top: 70%;
+}
+
+.container--text {
+  grid-column: 2;
+  grid: 5;
+}
+
+.container__small__right {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.container__small__right img {
+  display: block;
+  float: left;
+  position: absolute;
+  left: 60.5%;
+  top: 59%;
+}
+
+.container__large__right {
+  grid-column: 1;
+}
+
+.container__large__right img {
+  display: block;
+  float: left;
+  position: absolute;
+  left: 62.5%;
+  top: 70%;
+}
+
+.container--marine {
+  grid-column: 2;
+  grid-row: 5;
+  justify-self: right;
+  align-self: end;
+}
+
+.container--marine h1 {
+  position: absolute;
+  display: block;
+  left: 56.5%;
+  top: 89%;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.container--text {
+  grid-column: 2;
+}
+
+.container--text p {
+  font-size: 0.9rem;
+  padding: 0 21rem 1.5rem 3rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
